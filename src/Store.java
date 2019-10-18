@@ -147,6 +147,11 @@ public class Store {
                     				g.setItemQuantity(now);
                     				Grocery gAdd = new Grocery(cartId,cartName,cartPrice,cartQuantity);
                     				cart.add(gAdd);
+						System.out.println("Entire List.....");
+                    				for(Grocery g5: cart) {
+                        				System.out.println("\t Item Id:" + g5.getItemId() + "\t" +"Name:" + g5.getItemName() + "\t" + "Price:" + g5.getItemPrice() + "\t" + "Quantity:" + g5.getItemQuantity() +"\n");
+
+                    				}
                     					
                     			}
                     		}
